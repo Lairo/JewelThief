@@ -12,12 +12,12 @@ namespace JewelThief
         {
             safe.PickLock(this);
             string safeContents = safe.Open(Combination);
-            ReturnContetns(safeContents, owner);
+            ReturnContents(safeContents, owner);
         }
 
         public string Combination { private get; set; }
 
-        protected void ReturnContetns(string safeContents, SafeOwner owner)
+        protected void ReturnContents(string safeContents, SafeOwner owner)
         {
             owner.ReceiveContents(safeContents);
         }
