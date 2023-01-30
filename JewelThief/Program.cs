@@ -16,7 +16,7 @@ namespace JewelThief
             Safe safe = new Safe();
             JewelThief jewelThief = new JewelThief();
             jewelThief.OpenSafe(safe, owner);
-            Console.ReadKey(true);
+            Console.ReadKey(true);            
         }
     }
 }
